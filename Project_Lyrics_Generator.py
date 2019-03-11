@@ -6,7 +6,7 @@ import pandas as pd
 def LyricsGenerator():
 
 
-    data_loc = "/home/shivansh/Downloads/songdata.csv"
+    data_loc = "./songdata.csv"
     songfile = pd.read_csv(data_loc)
 
     #Initializing variable to lyrics in the dataset
@@ -77,7 +77,7 @@ def LyricsGenerator():
         sentence += nxt
         ctx = sentence[-order:]
 
-    f = open('/home/shivansh/Downloads/lyrics.txt','w')
+    f = open('./lyrics.txt','w')
     f.write(sentence)
     f.close()
 
