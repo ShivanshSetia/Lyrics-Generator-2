@@ -8,7 +8,7 @@ from flask import (
 from flask import jsonify
 app = Flask(__name__)
 
-@app.route('/lyrics')
+@app.route('/result')
 def result():
 	return Project_Lyrics_Generator.LyricsGenerator()
 	
